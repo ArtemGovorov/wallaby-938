@@ -1,0 +1,63 @@
+exports[`component Should be rendered correctly 1`] = `
+<div
+  className="root">
+  <div
+    className="string">
+    String is 
+    test string
+  </div>
+  <div
+    className="number">
+    Number is 
+    5
+  </div>
+</div>
+`;
+
+exports[`component Should be rendered correctly 2`] = `
+<div
+  className="root">
+  <div
+    className="string">
+    String is 
+    test string
+  </div>
+  <div
+    className="number">
+    Number is 
+    5
+  </div>
+</div>
+`;
+
+exports[`component Should be rendered correctly with different props 1`] = `
+<div
+  className="root">
+  <div
+    className="string">
+    String is 
+    another string
+  </div>
+  <div
+    className="number">
+    Number is 
+    6
+  </div>
+</div>
+`;
+
+exports[`component Should be rendered correctly with different props 2`] = `
+<div
+  className="root">
+  <div
+    className="string">
+    String is 
+    another string
+  </div>
+  <div
+    className="number">
+    Number is 
+    6
+  </div>
+</div>
+`;

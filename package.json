@@ -1,0 +1,63 @@
+{
+  "name": "wallaby-938",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asvetliakov/wallaby-938.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asvetliakov/wallaby-938/issues"
+  },
+  "homepage": "https://github.com/asvetliakov/wallaby-938#readme",
+  "dependencies": {
+    "@types/jest": "^16.0.3",
+    "@types/react": "0.0.0",
+    "@types/react-test-renderer": "^15.4.1",
+    "jest": "^18.1.0",
+    "react": "^15.4.2",
+    "react-test-renderer": "^15.4.2",
+    "ts-jest": "^18.0.1",
+    "typescript": "^2.1.4"
+  },
+  "jest": {
+    "globals": {
+      "__TS_CONFIG__": "tsconfig.json",
+      "window": true,
+      "document": true
+    },
+    "resetMocks": true,
+    "transform": {
+      "\\.(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "moduleNameMapper": {
+      "\\.(css|less)$": "<rootDir>/helpers/styleMock.js"
+    },
+    "testRegex": "(/__tests__/.*|.*_[Ss]pec)\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}",
+      "!src/**/*.d.ts",
+      "!src/main.tsx",
+      "!**/DevTools.tsx",
+      "!**/configureStore.ts"
+    ],
+    "coverageReporters": [
+      "json",
+      "lcov",
+      "text",
+      "cobertura"
+    ]
+  }
+}
