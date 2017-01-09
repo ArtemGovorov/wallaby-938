@@ -4,7 +4,8 @@ module.exports = function (wallaby) {
             "src/**/*.ts?(x)",
             "!src/**/*_Spec.ts?(x)",
             "src/**/*.snap",
-            "package.json"
+            "package.json",
+            "tsconfig.json"
         ],
         tests: [
             "src/**/*_Spec.ts?(x)"
